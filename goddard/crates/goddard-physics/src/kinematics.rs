@@ -1,4 +1,4 @@
-use constants::gravity::G;
+use crate::G;
 
 /// Calculate the ideal delta-v (change in velocity) using the Tsiolkovsky rocket equation
 /// 
