@@ -1,0 +1,9 @@
+[package]
+name = "goddard-physics"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "Physics calculations for the Goddard rocket simulation framework"
+
+[dependencies]
+goddard-core = { workspace = true }

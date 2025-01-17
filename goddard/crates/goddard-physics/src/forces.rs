@@ -1,17 +1,4 @@
-use crate::units::G;
-
-/// Calculate exhaust velocity from specific impulse (ISP)
-/// 
-/// Represents the speed at which propellant is ejected from the engine
-/// 
-/// # Parameters
-/// - `isp` - The specific impulse in seconds
-/// 
-/// # Returns
-/// - The exhaust velocity in meters per second
-pub fn exhaust_velocity_from_isp(isp: f64) -> f64 {
-    isp * G
-}
+use goddard_core::G;
 
 /// Calculate thrust from mass flow rate and exhaust velocity
 /// 
@@ -25,6 +12,19 @@ pub fn exhaust_velocity_from_isp(isp: f64) -> f64 {
 /// - The thrust in newtons
 pub fn thrust_from_mass_flow(mass_flow: f64, exhaust_velocity: f64) -> f64 {
     mass_flow * exhaust_velocity
+}
+
+/// Calculate exhaust velocity from specific impulse (ISP)
+/// 
+/// Represents the speed at which propellant is ejected from the engine
+/// 
+/// # Parameters
+/// - `isp` - The specific impulse in seconds
+/// 
+/// # Returns
+/// - The exhaust velocity in meters per second
+pub fn exhaust_velocity_from_isp(isp: f64) -> f64 {
+    isp * G
 }
 
 /// Calculate specific impulse (ISP) from exhaust velocity

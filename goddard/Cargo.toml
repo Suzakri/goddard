@@ -1,9 +1,21 @@
-[package]
-name = "goddard"
+[workspace]
+members = [
+    "crates/goddard-core",
+    "crates/goddard-physics",
+    "crates/goddard-propulsion",
+    "crates/goddard-cli",
+]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
-author = "Zach (https://x.com/su_zakri)"
+authors = ["Zach (https://x.com/su_zakri)"]
+description = "A rocket simulation framework built from first principles"
+repository = "https://github.com/suzakri/goddard"
 
-[dependencies]
-colored = "3.0.0"
+[workspace.dependencies]
+goddard-core = { path = "crates/goddard-core" }
+goddard-physics = { path = "crates/goddard-physics" }
+goddard-propulsion = { path = "crates/goddard-propulsion" }
+colored = "2.0"
 figlet-rs = "0.1.5"

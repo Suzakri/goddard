@@ -1,0 +1,13 @@
+[package]
+name = "goddard-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "Command line interface for the Goddard rocket simulation framework"
+
+[dependencies]
+goddard-core = { workspace = true }
+goddard-physics = { workspace = true }
+goddard-propulsion = { workspace = true }
+colored = { workspace = true }
+figlet-rs = { workspace = true } 
