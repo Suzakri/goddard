@@ -1,9 +1,8 @@
 [workspace]
 members = [
-    "crates/goddard-core",
     "crates/goddard-physics",
     "crates/goddard-propulsion",
-    "crates/goddard-cli",
+    "crates/goddard-cli"
 ]
 
 [workspace.package]
@@ -14,7 +13,6 @@ description = "A rocket simulation framework built from first principles"
 repository = "https://github.com/suzakri/goddard"
 
 [workspace.dependencies]
-goddard-core = { path = "crates/goddard-core" }
 goddard-physics = { path = "crates/goddard-physics" }
 goddard-propulsion = { path = "crates/goddard-propulsion" }
 colored = "2.0"

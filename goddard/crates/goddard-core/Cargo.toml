@@ -1,8 +1,0 @@
-[package]
-name = "goddard-core"
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-description = "Core functionality for the Goddard rocket simulation framework"
-
-[dependencies] 

@@ -1,12 +1,3 @@
-/// Standard gravitational acceleration (m/s²)
-pub const G: f64 = 9.80665;
-
-/// Standard atmospheric pressure at sea level (Pa)
-pub const P_ATM: f64 = 101325.0;
-
-/// Universal gas constant (J/(mol·K))
-pub const R: f64 = 8.31446261815324;
-
 /// Pressure conversions
 pub mod pressure {
     /// Convert pounds per square inch (psi) to pascals (Pa)

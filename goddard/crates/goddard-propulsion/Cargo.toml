@@ -3,8 +3,7 @@ name = "goddard-propulsion"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
-description = "Rocket engine and propulsion systems for the Goddard simulation framework"
+description = "Engine and propulsion systems for the Goddard rocket simulation framework"
 
 [dependencies]
-goddard-core = { workspace = true }
 goddard-physics = { workspace = true } 
