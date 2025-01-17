@@ -1,4 +1,4 @@
-use goddard_core::G;
+use constants::gravity::G;
 
 /// Calculate the ideal delta-v (change in velocity) using the Tsiolkovsky rocket equation
 /// 
